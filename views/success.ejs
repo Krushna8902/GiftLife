@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success Page</title>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row text-center ">
+            <div class="col-md-2"></div>
+            <div class="col-md-8 p-5">
+            <table class="table table-bordered">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Hospital Name</th>
+                  <th scope="col">Mobile</th>
+                  <th scope="col">Location</th>
+                </tr>
+              </thead>
+              <tbody class="thead-dark">
+                <% data.forEach(item => { %>
+                    <tr>
+                        <td><%= item.Name %></td>
+                        <td><%= item.Hospital_Name %></td>
+                        <td><%= item.Mobile %></td>
+                        <td><%= item.Location %></td>
+                    </tr>
+                <% }); %>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div> 
+</body>
+</html>
